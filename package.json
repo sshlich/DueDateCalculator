@@ -1,0 +1,22 @@
+{
+  "name": "duedatecalculator",
+  "version": "1.0.0",
+  "description": "Solution that implements an issue tracking system’s due date calculator.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshlich/DueDateCalculator.git"
+  },
+  "author": "Ivan Zholner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sshlich/DueDateCalculator/issues"
+  },
+  "homepage": "https://github.com/sshlich/DueDateCalculator#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
