@@ -82,9 +82,6 @@ const proceedWork2 = (date, turnaroundTime) => {
     date.setMinutes(date.getMinutes());
 };
 
-const submitDate = '1995-03-07T12:30';
-const turnaroundTime = 12;
-
 const calculator = ( submitDate, turnaroundTime ) => {
     const targetDate = new Date(submitDate);
     checkHours(targetDate);
@@ -94,6 +91,8 @@ const calculator = ( submitDate, turnaroundTime ) => {
 };
 
 //tests
+
+/*
 let testDate;
 let testTurnaroundTime;
 
@@ -109,7 +108,6 @@ if (calculator(testDate, testTurnaroundTime).toLocaleDateString("en-US", options
     console.log(`Test #1: Passed;`);
 } else console.log(`Test #1: Failed;`);
 
-/*
 testDate = new Date( '2000-03-24T12:30' );
 testTurnaroundTime = 0;
 
@@ -119,7 +117,7 @@ if (calculator(testDate, testTurnaroundTime) !== new Date('2000-03-24T12:30')) {
 
 testDate = new Date( '2000-09-24T12:30' );
 testTurnaroundTime = 0;
-*/
+
 
 console.log(testDate);
 console.log(testDate.toLocaleString("en-US", options));
@@ -130,4 +128,6 @@ console.log('----------------');
 console.log(calculator(testDate, testTurnaroundTime));
 console.log(calculator(testDate, testTurnaroundTime).toLocaleString("en-US", options));
 
+
+ */
 module.exports = { calculator };

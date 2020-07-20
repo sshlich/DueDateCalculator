@@ -25,7 +25,7 @@ app.post('/', (req, res) => {
     }
 
     if (calculator(req.body.submitDate, req.body.turnaroundTime) == 'Invalid Date') {
-        res.send(`\nYou sent invalid date!\n`);
+        res.send(`\nYou sent invalid date!\n\n`);
     } else res.send(`\nSubmitted date is: ${new Date(req.body.submitDate).toLocaleString("en-US", options)}\n`+
         `Turnaround time is: ${req.body.turnaroundTime} hours\n`+
         `Date when resolved is: ${calculator(req.body.submitDate, req.body.turnaroundTime).toLocaleString("en-US", options)}\n\n`);
