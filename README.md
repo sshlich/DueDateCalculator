@@ -5,11 +5,11 @@ USAGE GUIDE:
 
 First, open the directory where Dockerfile is, then build and run the app with:
 
-docker build -t sshlich/duedatecalculator . && docker run -p 49160:8080 -d sshlich/duedatecalculator
+```docker build -t sshlich/duedatecalculator . && docker run -p 49160:8080 -d sshlich/duedatecalculator```
 
 The app will be running in background mode on custom port (49160);
 To make queries we'll be using cURL:
-curl -d "submitDate=1995-03-010T16:59&turnaroundTime=25&exit=0" -X POST http://localhost:49160/
+```curl -d "submitDate=1995-03-010T16:59&turnaroundTime=25&exit=0" -X POST http://localhost:49160/```
 
 submitDate:
 is a date when we are receiving issue ticket in the format YYYY-MM-DDThh:mm ;
