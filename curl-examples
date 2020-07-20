@@ -1,0 +1,2 @@
+curl -d "submitDate=12.03.7&turnaroundTime=12" -X POST http://localhost:49160/
+curl -d "exit=1" -X POST http://localhost:49160/
