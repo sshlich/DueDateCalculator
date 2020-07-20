@@ -9,6 +9,7 @@ First, open the directory where Dockerfile is, then build and run the app with:
 
 The app will be running in background mode on custom port (49160);
 To make queries we'll be using cURL:
+
 ```curl -d "submitDate=1995-03-010T16:59&turnaroundTime=25&exit=0" -X POST http://localhost:49160/```
 
 submitDate:
